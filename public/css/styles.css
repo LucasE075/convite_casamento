@@ -218,7 +218,7 @@ body.home-page {
   min-height: 100vh;
   position: relative;
   padding: var(--spacing-sm);
-  background-image: url('/images/background_home.png');
+  background-image: url('./images/background_home.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -312,7 +312,7 @@ body.main-page {
 
 /* Mobile-first: prioridades para leitura em celular */
 .section-corners {
-  background-image: url('/images/top-left.png'), url('/images/top-right.png'), url('/images/bottom-left.png'), url('/images/bottom-right.png'), linear-gradient(180deg, #FEE39E 0%, #FDECDA 50%, #FED5CE 100%);
+  background-image: url('./images/top-left.png'), url('./images/top-right.png'), url('./images/bottom-left.png'), url('./images/bottom-right.png'), linear-gradient(180deg, #FEE39E 0%, #FDECDA 50%, #FED5CE 100%);
   background-repeat: no-repeat;
   background-position: 12px 12px, calc(100% - 12px) 12px, 12px calc(100% - 12px), calc(100% - 12px) calc(100% - 12px), center;
   background-size: 160px 160px, 160px 160px, 160px 160px, 160px 160px, cover;
