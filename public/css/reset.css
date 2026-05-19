@@ -1,0 +1,189 @@
+/* ============================================
+   RESET.CSS - NORMALIZAÇÃO GLOBAL
+   ============================================ */
+
+/* Remove margens e paddings padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML e Body */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: inherit;
+  background-color: transparent;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/* Parágrafos */
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Listas */
+ul, ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a:hover,
+a:focus {
+  outline: none;
+}
+
+/* Imagens */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 0;
+}
+
+/* Formulários */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  display: block;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: inline-block;
+}
+
+/* Remove estilos de input type file */
+input[type='file'] {
+  display: block;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+td,
+th {
+  padding: 0;
+  vertical-align: top;
+}
+
+/* Divisores */
+hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 1rem 0;
+}
+
+/* Citações */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* Small */
+small {
+  font-size: 0.875em;
+}
+
+/* Strong e Bold */
+strong,
+b {
+  font-weight: 700;
+}
+
+/* Emphasis */
+em,
+i {
+  font-style: italic;
+}
+
+/* Sublinhado */
+u {
+  text-decoration: underline;
+}
+
+/* Code */
+code,
+kbd,
+pre,
+samp {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+}
+
+/* Video e Canvas */
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* SVG */
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Iframe */
+iframe {
+  border: none;
+  display: block;
+}

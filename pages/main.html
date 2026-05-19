@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convite de Casamento Estella & Lucas</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body class="main-page">
+    <!-- Seção Banner Hero -->
+    <section class="section banner-section section-corners">
+      <div class="banner-hero container">
+
+        <!-- Conteúdo esquerdo: logos empilhados -->
+        <div class="banner-logo-main">
+          <img src="/images/logo1.png" alt="Logo 1" class="logo-image-main logo-box" />
+          <img src="/images/logo2.png" alt="Logo 2" class="logo-image-main logo-box" />
+          <img src="/images/logo3.png" alt="Logo 3" class="logo-image-main logo-box" />
+        </div>
+
+        <!-- Conteúdo direito: foto do casal em moldura oval -->
+        <div class="banner-photo-wrapper">
+          <div class="banner-photo-frame oval-frame">
+            <img src="/images/foto.png" alt="Casal" class="banner-photo" />
+          </div>
+        </div>
+
+        <!-- Indicador "role para baixo" -->
+        <div class="banner-scroll-indicator">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Seção Informações -->
+    <section class="section info-section">
+      <main class="info-container">
+        <!-- Fundo decorativo com flores -->
+        <div class="info-flowers info-flowers--left"></div>
+        <div class="info-flowers info-flowers--right"></div>
+
+        <!-- Conteúdo principal -->
+        <div class="info-content">
+          <!-- Título -->
+          <h1 class="info-title">Queridos convidados,</h1>
+          
+          <!-- Coração decorativo -->
+          <div class="info-heart-divider">♥</div>
+
+          <!-- Texto introdutório -->
+          <div class="info-columns">
+            <div class="info-text-section">
+            <p class="info-text">
+              Ao longo desses quase 10 anos, caminhamos juntos, compartilhando sonhos, 
+              superando desafios e fortalecendo o nosso amor a cada dia.
+            </p>
+            
+            <p class="info-text">
+              Agora, chegou o momento de dizer o nosso "sim" eterno. Estamos contando os dias 
+              e preparando tudo com muito carinho para celebrar esse momento tão especial com nossos 
+              amigos e familiares queridos.
+            </p>
+
+            <p class="info-text">
+              E diante dessa linda história com as bênçãos de Deus e de nossos pais queremos 
+              convidá-lo a estar conosco nesse <span class="info-highlight">dia tão especial!</span>
+            </p>
+
+            <!-- Contagem Regressiva -->
+            <div class="countdown-container">
+              <p class="countdown-label">Faltam:</p>
+              <div class="countdown-timer">
+                <div class="countdown-item">
+                  <div class="countdown-value" id="days">0</div>
+                  <div class="countdown-label-small">Dias</div>
+                </div>
+                <div class="countdown-item">
+                  <div class="countdown-value" id="hours">0</div>
+                  <div class="countdown-label-small">Horas</div>
+                </div>
+                <div class="countdown-item">
+                  <div class="countdown-value" id="minutes">0</div>
+                  <div class="countdown-label-small">Minutos</div>
+                </div>
+                <div class="countdown-item">
+                  <div class="countdown-value" id="seconds">0</div>
+                  <div class="countdown-label-small">Segundos</div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <!-- Vídeo principal em destaque -->
+            <div class="info-video-main-wrapper">
+              <div class="info-video-main-frame">
+                <div class="video-player-wrapper">
+                  <video id="coupleVideo" class="video-element" width="640" height="700" controls>
+                    <source src="/videos/couple.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeo.
+                  </video>
+                  <button id="videoPlayButton" class="video-play-button" aria-label="Reproduzir vídeo">▶</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fotos menores na parte inferior -->
+          <div class="info-photos-gallery">
+            <div class="info-photo-small">
+              <img src="/images/info1.jpeg" alt="Foto 1" />
+            </div>
+            <div class="info-photo-small">
+              <img src="/images/info2.jpeg" alt="Foto 2" />
+            </div>
+            <div class="info-photo-small">
+              <img src="/images/info3.jpeg" alt="Foto 3" />
+            </div>
+          </div>
+
+          <div id="imageModal" class="image-modal-overlay" aria-hidden="true">
+            <div class="image-modal-box" role="dialog" aria-modal="true" aria-label="Visualização de imagem">
+              <button id="imageModalClose" class="image-modal-close" aria-label="Fechar imagem">✕</button>
+              <img id="imageModalImg" class="image-modal-img" src="" alt="Imagem ampliada" />
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <!-- Seção Mapa -->
+    <section class="section mapa-section">
+      <div class="map-container">
+        <div class="map-part map-cerimonia">
+          <h2 class="map-title">Cerimônia</h2>
+          <div class="map-part-inner">
+            <div class="map-image" style="background-image: url('/images/mapa1.png');"></div>
+            <div class="map-text">
+              <h3>Paróquia Nossa Senhora Aparecida - SH Contagem.</h3>
+              <p>DF-150, Km 05<br/>Cond. Petrópolis</p>
+              <p><strong>Início às 18h30</strong></p>
+            </div>
+            <div class="mini-map" id="mini-map-cerimonia"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3841.879780168986!2d-47.8411714!3d-15.651388999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a40ac550bee89%3A0x32732f178a7fd6bf!2sPar%C3%B3quia%20Nossa%20Senhora%20Aparecida!5e0!3m2!1spt-BR!2sbr!4v1779138768769!5m2!1spt-BR!2sbr" width="600" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          </div>
+        </div>
+
+        <div class="map-part map-recepcao">
+          <h2 class="map-title">Recepção</h2>
+          <div class="map-part-inner">
+            <div class="map-image" style="background-image: url('/images/mapa2.png');"></div>
+            <div class="map-text">
+              <h3>Decofest Casa de Praia</h3>
+              <p>Setor de Mansões mód. 3<br/>lote 22 - SH Nova Colina</p>
+              <p><strong>Logo após a cerimônia</strong></p>
+            </div>
+            <div class="mini-map" id="mini-map-recepcao"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4438.722124229083!2d-47.7609870207243!3d-15.651572353601475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a15de92cd6b39%3A0xe41fbcb1aac48dcf!2sDecoFest%20I%20Casa%20de%20Praia%20(Sal%C3%A3o%20de%20Festa)!5e0!3m2!1spt-BR!2sbr!4v1779138835613!5m2!1spt-BR!2sbr" width="600" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Presença -->
+    <section class="section presenca-section">
+      <main class="presenca-container">
+        <div class="presenca-decorations">
+          <div class="presenca-flower presenca-flower--left"></div>
+          <div class="presenca-flower presenca-flower--right"></div>
+        </div>
+
+        <section class="presenca-card">
+          <div class="presenca-header">
+            <h1>Confirmar presença</h1>
+          </div>
+
+          <div class="presenca-features">
+            <div class="presenca-feature">
+              <div class="presenca-feature-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B496C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+              </div>
+              <div class="presenca-feature-text">
+                <p>Pedimos, por gentileza, que confirme sua presença (ou ausência) pelo link abaixo até o dia 25 de maio.</p>
+              </div>
+            </div>
+
+            <div class="presenca-feature">
+              <div class="presenca-feature-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B496C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16v16H4z" />
+                  <path d="M8 9h8" />
+                  <path d="M8 13h8" />
+                  <path d="M8 17h5" />
+                </svg>
+              </div>
+              <div class="presenca-feature-text">
+                <p>No momento da confirmação, será disponibilizado um campo para informar seu nome e o de seus acompanhantes.</p>
+              </div>
+            </div>
+          </div>
+
+          <a class="presenca-button" href="https://www.casamentos.com.br/web/estella-gabriela-and-lucas-emanuel/confirmeasuapresenca-3">Confirmar Presença</a>
+          <p class="presenca-note">Em breve você poderá preencher seus dados e os de seus acompanhantes.</p>
+        </section>
+      </main>
+    </section>
+
+    <script src="/js/app.js"></script>
+    <script>
+      (function() {
+        // Navegação entre seções
+        document.querySelectorAll('.section-link').forEach(link => {
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.querySelector(`.${targetId}-section`);
+            if (targetSection) {
+              targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+          });
+        });
+
+        // Home link
+        document.querySelectorAll('.header-home').forEach(link => {
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('.banner-section').scrollIntoView({ behavior: 'smooth' });
+          });
+        });
+
+        // Contagem Regressiva até 12/06/2026 18:30 (Brasília)
+        function updateCountdown() {
+          // Data do evento: 12 de junho de 2026, 18:30 (Brasília)
+          const eventDate = new Date('2026-06-12T18:30:00').getTime();
+          
+          // Ajuste para horário de Brasília (UTC-3)
+          const userDate = new Date();
+          const offset = userDate.getTimezoneOffset() * 60000;
+          const brasíliaOffset = 3 * 60 * 60 * 1000; // UTC-3
+          const now = Date.now() + offset - brasíliaOffset;
+          
+          const timeRemaining = eventDate - now;
+          
+          if (timeRemaining > 0) {
+            const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+          } else {
+            document.getElementById('days').textContent = '00';
+            document.getElementById('hours').textContent = '00';
+            document.getElementById('minutes').textContent = '00';
+            document.getElementById('seconds').textContent = '00';
+          }
+        }
+        
+        // Atualiza a cada segundo
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        const video = document.getElementById('coupleVideo');
+        const playButton = document.getElementById('videoPlayButton');
+
+        if (video && playButton) {
+          playButton.addEventListener('click', () => {
+            video.play();
+            playButton.classList.add('hidden');
+          });
+
+          video.addEventListener('play', () => {
+            playButton.classList.add('hidden');
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
