@@ -930,7 +930,11 @@ body.main-page {
 
 /* Seção Presença */
 .presenca-section {
-  background: linear-gradient(180deg, #E8CFF3 0%, #E7E7F8 50%, #D9EDF8 100%);
+  /* Decorative corner images + gradient */
+  background-image: url('../images/top-left.png'), url('../images/top-right.png'), url('../images/bottom-left.png'), url('../images/bottom-right.png'), linear-gradient(180deg, #E8CFF3 0%, #E7E7F8 50%, #D9EDF8 100%);
+  background-position: top left, top right, bottom left, bottom right, center;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 240px 240px, 240px 240px, 240px 240px, 240px 240px, cover;
   padding: var(--spacing-xl) 0;
   overflow-x: hidden;
 }
