@@ -283,7 +283,7 @@ body.main-page {
 
 /* Seção Banner Hero */
 .banner-section {
-  background: linear-gradient(180deg, #FEE39E 0%, #FDECDA 50%, #FED5CE 100%);
+  background: linear-gradient(180deg, #FFE5AB 0%, #FFE5AB 50%, #FED4CE 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -312,7 +312,7 @@ body.main-page {
 
 /* Mobile-first: prioridades para leitura em celular */
 .section-corners {
-  background-image: url('../images/top-left.png'), url('../images/top-right.png'), url('../images/bottom-left.png'), url('../images/bottom-right.png'), linear-gradient(180deg, #FEE39E 0%, #FDECDA 50%, #FED5CE 100%);
+  background-image: url('../images/top-left.png'), url('../images/top-right.png'), url('../images/bottom-left.png'), url('../images/bottom-right.png'), linear-gradient(180deg, #FFE5AB 0%, #FFE5AB 50%, #FED4CE 100%);
   background-repeat: no-repeat;
   background-position: 12px 12px, calc(100% - 12px) 12px, 12px calc(100% - 12px), calc(100% - 12px) calc(100% - 12px), center;
   background-size: 160px 160px, 160px 160px, 160px 160px, 160px 160px, cover;
@@ -961,7 +961,7 @@ body.main-page {
     url('../images/top-right.png'),
     url('../images/bottom-left.png'),
     url('../images/bottom-right.png'),
-    linear-gradient(135deg, #FEE39E 0%, #FDECDA 50%, #FED5CE 100%);
+    linear-gradient(180deg, #FFE5AB 0%, #FFE5AB 50%, #FED4CE 100%);
   background-position: top left, top right, bottom left, bottom right, center;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   /* Ajuste os tamanhos conforme necessário */
