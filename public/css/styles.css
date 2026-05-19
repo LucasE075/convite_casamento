@@ -1557,8 +1557,9 @@ body.main-page {
   }
 
   .banner-photo-frame {
-    width: 160px;
-    height: 220px;
+    width: 200px;
+    height: 280px;
+    max-width: none;
   }
 
   .banner-logo {
@@ -1603,6 +1604,10 @@ body.main-page {
 
   .banner-hero {
     padding: 1.5rem;
+  }
+
+  .banner-photo-frame {
+    max-width: none;
   }
 
   .info-columns {
@@ -1683,8 +1688,9 @@ body.main-page {
   }
 
   .banner-photo-frame {
-    width: 200px;
-    height: 280px;
+    width: 280px;
+    height: 380px;
+    max-width: none;
   }
 
   .banner-decoration {
