@@ -450,42 +450,7 @@ body.main-page {
   }
 }
 
-/* Elementos decorativos */
-.banner-decoration {
-  position: absolute;
-  display: block;
-  max-width: 180px;
-  width: auto;
-  height: auto;
-  z-index: 2;
-}
-
-.banner-decoration img,
-.banner-decoration__image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.banner-decoration--top-left {
-  top: 30px;
-  left: -30px;
-}
-
-.banner-decoration--top-right {
-  top: 30px;
-  right: -30px;
-}
-
-.banner-decoration--bottom-left {
-  bottom: -30px;
-  left: 30px;
-}
-
-.banner-decoration--bottom-right {
-  bottom: -30px;
-  right:  30px;
-}
+/* Elementos decorativos removidos (flores/banners decorativos) */
 
 /* Logo */
 .banner-logo {
@@ -593,34 +558,7 @@ body.main-page {
   z-index: 2;
 }
 
-/* Decorações com flores */
-.info-flowers {
-  position: absolute;
-  font-size: 3rem;
-  opacity: 0.6;
-  z-index: 1;
-}
-
-.info-flowers--left {
-  top: 15%;
-  left: 2%;
-  animation: float 3s ease-in-out infinite;
-}
-
-.info-flowers--right {
-  bottom: 20%;
-  right: 2%;
-  animation: float 3s ease-in-out infinite 0.5s;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
+/* Decorações com flores removidas */
 
 /* Título e divisor */
 .info-title {
@@ -1011,33 +949,7 @@ body.main-page {
   position: relative;
 }
 
-.presenca-decorations {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.presenca-flower {
-  position: absolute;
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 12px 32px rgba(166, 122, 82, 0.1);
-}
-
-.presenca-flower--left {
-  bottom: -20px;
-  left: -20px;
-  transform: translate(0, 0);
-}
-
-.presenca-flower--right {
-  bottom: -20px;
-  right: -20px;
-  transform: translate(0, 0);
-}
+/* Presença decorations removed */
 
 .presenca-card {
   position: relative;
@@ -1323,9 +1235,7 @@ body.main-page {
     margin: 0 auto;
   }
 
-  .banner-decoration {
-    display: none;
-  }
+  /* banner-decoration rules removed */
 
   .banner-logo {
     top: 0.5rem;
@@ -1693,9 +1603,7 @@ body.main-page {
     max-width: none;
   }
 
-  .banner-decoration {
-    display: none;
-  }
+  /* banner-decoration rules removed */
 
   .banner-logo {
     top: var(--spacing-sm);
