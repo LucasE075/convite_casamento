@@ -1028,15 +1028,15 @@ body.main-page {
 }
 
 .presenca-flower--left {
-  top: 0;
-  left: 0;
-  transform: translate(-30%, -20%);
+  bottom: -20px;
+  left: -20px;
+  transform: translate(0, 0);
 }
 
 .presenca-flower--right {
-  bottom: 0;
-  right: 0;
-  transform: translate(30%, 20%);
+  bottom: -20px;
+  right: -20px;
+  transform: translate(0, 0);
 }
 
 .presenca-card {
