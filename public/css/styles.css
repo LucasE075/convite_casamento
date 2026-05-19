@@ -312,10 +312,10 @@ body.main-page {
 
 /* Mobile-first: prioridades para leitura em celular */
 .section-corners {
-  background-image: url('../images/top-left.png'), url('../images/top-right.png'), url('../images/bottom-left.png'), url('../images/bottom-right.png'), linear-gradient(180deg, #FFE5AB 0%, #FFE5AB 50%, #FED4CE 100%);
+  background: linear-gradient(180deg, #FFE5AB 0%, #FFE5AB 50%, #FED4CE 100%);
   background-repeat: no-repeat;
-  background-position: 12px 12px, calc(100% - 12px) 12px, 12px calc(100% - 12px), calc(100% - 12px) calc(100% - 12px), center;
-  background-size: 160px 160px, 160px 160px, 160px 160px, 160px 160px, cover;
+  background-position: center;
+  background-size: cover;
 }
 
 /* Layout móvel: logos centralizadas e empilhadas */
@@ -893,17 +893,10 @@ body.main-page {
    corner-bottom-right.png (ou ajuste os caminhos abaixo).
 */
 .section-corners {
-  /* Backgrounds múltiplos: as imagens vêm primeiro, depois o degradê */
-  background-image: 
-    url('../images/top-left.png'),
-    url('../images/top-right.png'),
-    url('../images/bottom-left.png'),
-    url('../images/bottom-right.png'),
-    linear-gradient(180deg, #FFE5AB 0%, #FFE5AB 50%, #FED4CE 100%);
-  background-position: top left, top right, bottom left, bottom right, center;
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  /* Ajuste os tamanhos conforme necessário */
-  background-size: 420px 420px, 420px 420px, 420px 420px, 420px 420px, cover;
+  background: linear-gradient(180deg, #FFE5AB 0%, #FFE5AB 50%, #FED4CE 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: var(--spacing-xl) 0;
   position: relative;
   overflow: hidden;
