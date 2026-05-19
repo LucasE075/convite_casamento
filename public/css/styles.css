@@ -946,6 +946,28 @@ body.main-page {
   position: relative;
 }
 
+/* Presença: cantos decorativos via imagens */
+.presenca-corners {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+.presenca-corner {
+  position: absolute;
+  width: 240px;
+  height: auto;
+  max-width: 30%;
+}
+.presenca-corner--top-left { top: 0; left: 0; transform: translate(-10%, -10%); }
+.presenca-corner--top-right { top: 0; right: 0; transform: translate(10%, -10%); }
+.presenca-corner--bottom-left { bottom: 0; left: 0; transform: translate(-10%, 10%); }
+.presenca-corner--bottom-right { bottom: 0; right: 0; transform: translate(10%, 10%); }
+
+@media (max-width: 768px) {
+  .presenca-corners { display: none; }
+}
+
 /* Presença decorations removed */
 
 .presenca-card {
