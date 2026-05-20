@@ -1,0 +1,21 @@
+{
+  "name": "Convite de Casamento - Estella & Lucas",
+  "short_name": "Convite EstellaLucas",
+  "description": "Convite de casamento digital para Estella e Lucas.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FEE5AB",
+  "theme_color": "#CFA57F",
+  "icons": [
+    {
+      "src": "public/images/flavicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "public/images/flavicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
