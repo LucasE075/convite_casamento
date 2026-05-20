@@ -303,6 +303,7 @@ body.main-page {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: var(--spacing-lg);
   position: relative;
   padding: var(--spacing-lg);
   box-sizing: border-box;
@@ -310,18 +311,8 @@ body.main-page {
   overflow: hidden;
 }
 
-/* Layout do banner em desktop: duas colunas (logos | foto) */
-.banner-hero {
-  gap: var(--spacing-lg);
-}
-
 /* Mobile-first: prioridades para leitura em celular */
-.section-corners {
-  background: linear-gradient(180deg, #FFE5AB 0%, #FFE5AB 50%, #FED4CE 100%);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100% 100%;
-}
+/* Section corner decoration is defined globally below. */
 
 /* Layout móvel: logos centralizadas e empilhadas */
 .banner-logo-main {
@@ -1042,26 +1033,6 @@ body.main-page {
   justify-content: center;
   padding: 1rem 2.5rem;
   border-radius: var(--radius-full);
-  background: #B496C9;
-  color: white;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-decoration: none;
-  box-shadow: 0 15px 30px rgba(180, 150, 201, 0.25);
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-}
-
-.presenca-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 20px 36px rgba(180, 150, 201, 0.32);
-}
-
-.presenca-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 2.5rem;
-  border-radius: var(--radius-full);
   background: linear-gradient(135deg, #a17adb, #d39fe7);
   color: white;
   font-size: 1.1rem;
@@ -1625,6 +1596,7 @@ body.main-page {
   }
 
   .banner-photo-wrapper {
+    width: 100%;
     position: static;
     transform: none;
     margin-top: var(--spacing-lg);
@@ -1732,7 +1704,7 @@ body.main-page {
   .banner-photo-wrapper {
     position: static;
     transform: none;
-    width: 40%;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
