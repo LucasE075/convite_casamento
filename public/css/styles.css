@@ -500,7 +500,7 @@ body.main-page {
 
 .banner-photo-frame {
   width: 100%;
-  height: 100%;
+  height: 60vh;
   border: none;
   border-radius: 0;
   overflow: hidden;
@@ -945,11 +945,7 @@ body.main-page {
 
 /* Seção Presença */
 .presenca-section {
-  /* Decorative corner images + gradient */
-  background-image: url('../images/top-left.png'), url('../images/top-right.png'), url('../images/bottom-left.png'), url('../images/bottom-right.png'), linear-gradient(180deg, #E8CFF3 0%, #E7E7F8 50%, #D9EDF8 100%);
-  background-position: top left, top right, bottom left, bottom right, center;
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: 240px 240px, 240px 240px, 240px 240px, 240px 240px, cover;
+  background: linear-gradient(180deg, #E8CFF3 0%, #E7E7F8 50%, #D9EDF8 100%);
   padding: var(--spacing-xl) 0;
   overflow-x: hidden;
 }
@@ -987,7 +983,8 @@ body.main-page {
 
 .presenca-card {
   position: relative;
-  background: transparent;
+  z-index: 2;
+  background: url('../images/background_presenca.png') center/cover no-repeat;
   border: none;
   border-radius: var(--radius-lg);
   box-shadow: none;
@@ -1264,8 +1261,8 @@ body.main-page {
   }
 
   .banner-photo-frame {
-    width: 180px;
-    height: 230px;
+    width: 100%;
+    height: 60vh;
     margin: 0 auto;
   }
 
@@ -1501,8 +1498,8 @@ body.main-page {
   }
 
   .banner-photo-frame {
-    width: 200px;
-    height: 280px;
+    width: 100%;
+    height: 60vh;
     max-width: none;
   }
 
@@ -1551,12 +1548,14 @@ body.main-page {
   }
 
   .banner-photo-frame {
+    width: 100%;
+    height: 60vh;
     max-width: none;
   }
 
   .info-columns {
     flex-direction: column;
-  }
+  
 
   .info-container {
     padding: var(--spacing-lg) var(--spacing-sm);
@@ -1632,8 +1631,8 @@ body.main-page {
   }
 
   .banner-photo-frame {
-    width: 280px;
-    height: 380px;
+    width: 100%;
+    height: 60vh;
     max-width: none;
   }
 
@@ -1742,7 +1741,7 @@ body.main-page {
 
   .banner-photo-frame {
     width: 100%;
-    height: 100%;
+    height: 60vh;
   }
 
   .banner-scroll-indicator {
@@ -1882,4 +1881,5 @@ img, picture, video, iframe {
   .info-text {
     font-size: 0.92rem;
   }
+}
 }
