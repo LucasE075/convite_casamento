@@ -501,7 +501,7 @@ body.main-page {
 
 .banner-photo {
   object-fit: cover;
-  object-position: center;
+  object-position: top center;
 }
 
 /* Indicador de scroll */
@@ -936,12 +936,25 @@ body.main-page {
 
 /* Seção Presença */
 .presenca-section {
-  background-image: linear-gradient(180deg, #E8CFF3 0%, #E7E7F8 50%, #D9EDF8 100%), url('../images/background_presenca.png');
-  background-position: top center, bottom right;
-  background-repeat: no-repeat, no-repeat;
-  background-size: auto, min(420px, 35%);
+  position: relative;
+  background: linear-gradient(180deg, #E8CFF3 0%, #E7E7F8 50%, #D9EDF8 100%);
   padding: var(--spacing-xl) 0;
   overflow-x: hidden;
+}
+
+.presenca-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: min(420px, 35%);
+  aspect-ratio: 1 / 1;
+  background-image: url('../images/background_presenca.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .presenca-container {
@@ -949,14 +962,15 @@ body.main-page {
   margin: auto;
   padding: 0 var(--spacing-sm);
   position: relative;
+  z-index: 2;
 }
 
 /* Presença decorations removed */
 
 .presenca-card {
   position: relative;
-  z-index: 2;
-  background: rgba(255, 255, 255, 0.92);
+  z-index: 3;
+  background: transparent;
   border: none;
   border-radius: var(--radius-lg);
   box-shadow: none;
