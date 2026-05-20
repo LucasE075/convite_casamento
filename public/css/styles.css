@@ -948,7 +948,7 @@ body.main-page {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: min(420px, 35%);
+  width: min(520px, 45%);
   aspect-ratio: 1 / 1;
   background-image: url('../images/background_presenca.png');
   background-repeat: no-repeat;
@@ -1213,23 +1213,30 @@ body.main-page {
   .banner-hero {
     padding: var(--spacing-sm);
     justify-content: flex-start;
-    padding-top: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    min-height: 0;
+  }
+
+  .banner-section.section-corners {
+    padding: var(--spacing-md) 0;
   }
 
   .banner-logo-main {
-    height: 60vh;
-    margin-top: var(--spacing-sm);
+    height: auto;
+    margin-top: 0.75rem;
   }
 
   .banner-photo-wrapper {
     position: static;
     transform: none;
-    margin-top: 1.25rem;
+    margin-top: 1rem;
   }
 
   .banner-photo-frame {
     width: 100%;
-    height: 60vh;
+    height: 50vh;
+    max-height: 360px;
     margin: 0 auto;
   }
 
@@ -1448,10 +1455,17 @@ body.main-page {
     height: 228px;
   }
 
+  .banner-section {
+    min-height: auto;
+    padding: var(--spacing-md) 0;
+  }
+
   .banner-hero {
     padding: var(--spacing-sm);
     justify-content: flex-start;
-    padding-top: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    min-height: 0;
   }
 
   .banner-logo-main {
@@ -1461,26 +1475,14 @@ body.main-page {
   .banner-photo-wrapper {
     position: static;
     transform: none;
-    margin-top: 1.5rem;
-  }
-
-  .banner-section {
-    min-height: auto;
-  }
-
-  .banner-hero {
-    height: auto;
-    min-height: 70vh;
-    justify-content: flex-start;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    margin-top: 1.25rem;
   }
 
   .banner-photo-frame {
     width: 100%;
-    height: 55vh;
+    height: 50vh;
     max-width: none;
-    max-height: 420px;
+    max-height: 380px;
     margin: 0 auto;
   }
 
@@ -1878,5 +1880,4 @@ img, picture, video, iframe {
   .info-text {
     font-size: 0.92rem;
   }
-}
 }
