@@ -424,6 +424,7 @@ body.main-page {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top center;
     display: block;
   }
 }
@@ -1463,10 +1464,24 @@ body.main-page {
     margin-top: 1.5rem;
   }
 
+  .banner-section {
+    min-height: auto;
+  }
+
+  .banner-hero {
+    height: auto;
+    min-height: 70vh;
+    justify-content: flex-start;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .banner-photo-frame {
     width: 100%;
-    height: 60vh;
+    height: 55vh;
     max-width: none;
+    max-height: 420px;
+    margin: 0 auto;
   }
 
   .banner-logo {
@@ -1483,12 +1498,20 @@ body.main-page {
 
   .info-columns {
     flex-direction: column;
+    gap: 1.5rem;
   }
 
   .map-part-inner {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     align-items: center;
     text-align: center;
+  }
+
+  .map-part-inner > * {
+    width: 100% !important;
+    grid-column: 1 / -1 !important;
   }
 }
 
@@ -1521,7 +1544,7 @@ body.main-page {
 
   .info-columns {
     flex-direction: column;
-  
+  }
 
   .info-container {
     padding: var(--spacing-lg) var(--spacing-sm);
@@ -1549,9 +1572,16 @@ body.main-page {
   }
 
   .map-part-inner {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     align-items: center;
     text-align: center;
+  }
+
+  .map-part-inner > * {
+    width: 100% !important;
+    grid-column: 1 / -1 !important;
   }
 
   .map-image {
