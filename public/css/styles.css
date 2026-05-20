@@ -442,9 +442,12 @@ body.main-page {
     height: 300px;
     border-width: 10px;
   }
+
+  .banner-logo-main {
+    justify-content: flex-start;
+  }
 }
 
-/* Elementos decorativos removidos (flores/banners decorativos) */
 
 /* Logo */
 .banner-logo {
