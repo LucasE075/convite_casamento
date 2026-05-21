@@ -957,6 +957,9 @@ body.main-page {
 /* Seção Presença */
 .presenca-section {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(180deg, #E8CFF3 0%, #E7E7F8 50%, #D9EDF8 100%);
   padding: var(--spacing-xl) 0;
   overflow-x: hidden;
@@ -968,8 +971,8 @@ body.main-page {
   inset: 0;
   background-image: url('../images/background_presenca.png');
   background-repeat: no-repeat;
-  background-position: center 65%;
-  background-size: min(360px, 36%);
+  background-position: center 55%;
+  background-size: min(520px, 45%);
   opacity: 0.5;
   pointer-events: none;
   z-index: 1;
@@ -1100,6 +1103,7 @@ body.main-page {
   background: linear-gradient(180deg, #CDF2D1 0%, #EAE8EE 50%, #E8CFF3 100%);
   padding: var(--spacing-xl) 0;
   color: var(--text);
+  align-items: center;
 }
 
 .map-container {
@@ -1155,8 +1159,9 @@ body.main-page {
   flex-direction: column;
   justify-content: center;
   padding: 0.5rem 0.25rem;
-  align-items: stretch;
+  align-items: center;
   text-align: justify;
+  
 }
 
 .map-text h3 {
