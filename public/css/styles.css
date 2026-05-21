@@ -261,12 +261,6 @@ body.home-page {
   transition: transform var(--transition-fast), filter var(--transition-fast), border-color var(--transition-fast);
 }
 
-.home-hero__button:hover {
-  transform: translateY(-2px);
-  filter: brightness(1.05);
-  border-color: #b68e3c;
-}
-
 
 /* ============================================
    PÁGINA MAIN (main.html)
