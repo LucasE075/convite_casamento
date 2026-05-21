@@ -1155,13 +1155,15 @@ body.main-page {
   flex-direction: column;
   justify-content: center;
   padding: 0.5rem 0.25rem;
-  align-items: center;
+  align-items: stretch;
+  text-align: justify;
 }
 
 .map-text h3 {
   margin: 0 0 0.5rem 0;
   color: #3a2d2a;
   font-family: var(--font-title);
+  text-align: justify;
 }
 
 .map-text p {
