@@ -968,8 +968,8 @@ body.main-page {
   inset: 0;
   background-image: url('../images/background_presenca.png');
   background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: min(420px, 42%);
+  background-position: center 65%;
+  background-size: min(360px, 36%);
   opacity: 0.5;
   pointer-events: none;
   z-index: 1;
@@ -1132,7 +1132,7 @@ body.main-page {
   grid-template-columns: 30% 1fr 30%;
   grid-auto-rows: minmax(160px, auto);
   gap: 1.5rem;
-  align-items: stretch;
+  align-items: center;
   align-content: center;
   justify-content: center;
   width: 100%;
