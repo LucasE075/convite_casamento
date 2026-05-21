@@ -105,6 +105,10 @@ h3 {
   font-weight: 700;
 }
 
+p {
+  font-weight: 700;
+}
+
 h1 {
   font-size: clamp(2.5rem, 2.2vw + 1.8rem, 4rem);
 }
@@ -964,8 +968,8 @@ body.main-page {
   inset: 0;
   background-image: url('../images/background_presenca.png');
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-position: right bottom;
+  background-size: min(420px, 42%);
   opacity: 0.5;
   pointer-events: none;
   z-index: 1;
